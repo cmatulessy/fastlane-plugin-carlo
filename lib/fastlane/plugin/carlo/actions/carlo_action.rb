@@ -17,7 +17,7 @@ module Fastlane
       end
 
       def self.description
-        "It's the best"
+        "Its the best"
       end
 
       def self.authors
