@@ -8,10 +8,13 @@ module Fastlane
         UI.message("This is awesome 🤩!")
 
         require "open-uri"
-        require "pry"
-        Pry.config.input = STDIN
-        Pry.config.output = STDOUT
-        binding.pry
+       
+        # For debug see code below: 
+        # require "pry"
+        # Pry.config.input = STDIN
+        # Pry.config.output = STDOUT
+        # binding.pry
+        # /Debug code
 
         open("https://www.apparata.nl/files/2020/01/android-logo-poppetje-919x612.jpg") {|f|
           File.open("android.jpg","wb") do |file|
